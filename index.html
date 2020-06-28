@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width : 1100px)" href="css/style1.css">
+    <link rel="stylesheet" media="screen and (max-width : 900px)" href="css/style2.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width : 540px)" href="css/style3.css">  -->
+    <link rel="stylesheet" media="screen and (max-width : 340px)" href="css/style4.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width : 280px)" href="css/style5.css">  -->
+    
+    <script src="app.js"></script>
+</head>
+<body>
+   
+    <div id="cal">
+
+
+        <div class="inp">
+            <input type="text" id="inp">
+        </div>
+
+<div class="butt">
+
+    <div id="clear">
+        <button class="clear" onclick="getClear()">CLEAR</button>
+        <button class="clear" onclick="getDel()">Del</button>
+
+        
+    </div>
+      
+
+        <div class="calculator">
+            <button id="box" class="fir" onclick="getNumber('7')">7</button>
+            <button id="box" class="sec" onclick="getNumber('8')">8</button>
+            <button id="box" class="thi" onclick="getNumber('9')">9</button>
+            <button id="box" class="four" onclick="getNumber('/')">/</button>
+        </div>
+
+        <div class="cal">
+            <button id="box" class="fir" onclick="getNumber('4')">4</button>
+            <button id="box" class="sec" onclick="getNumber('5')">5</button>
+            <button id="box" class="thi" onclick="getNumber('6')">6</button>
+            <button id="box" class="four" onclick="getNumber('*')">x</button>
+        </div>
+
+        <div class="cal">
+            <button id="box" class="fir" onclick="getNumber('1')">1</button>
+            <button id="box" class="sec" onclick="getNumber('2')">2</button>
+            <button id="box" class="thi" onclick="getNumber('3')">3</button>
+            <button id="box" class="four" onclick="getNumber('-')">-</button>
+        </div>
+
+        <div class="cal">
+            <button id="box" class="fir" onclick="getNumber('0')">0</button>
+            <button id="box" class="sec" onclick="getNumber('.')">.</button>
+            <button id="box" class="thi" onclick="getResult()">=</button>
+            <button id="box" class="four" onclick="getNumber('+')">+</button>
+        </div>
+
+        <div class="cal">
+            <button id="box" class="fir" onclick="getNumber('(')">(</button>
+            <button id="box" class="sec" onclick="getNumber(')')">)</button>
+            <button id="box" class="power" onclick="getNumber('**2')"> x <sup>2</sup></button>
+            <button id="box" class="power" onclick="getNumber('**')">x <sup>n</sup></button>
+        </div>
+        
+
+    </div>
+    </div>
+</body>
+</html>
